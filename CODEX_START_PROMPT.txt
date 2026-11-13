@@ -1,0 +1,12 @@
+Please implement the Maison CLM FUNCTIONAL PROTOTYPE in this existing repository using the attached/local file `CLM_FUNCTIONAL_PROTOTYPE_SPEC_v1.0.md` as the binding specification.
+
+IMPORTANT:
+1) First inspect package.json, source tree, routing, components, and any existing prototype; reuse existing React + TypeScript + Tailwind architecture. Do not overwrite work or replace the demo products/data without a clear reason.
+2) Build an interactive functional prototype, NOT a static UI. It must support the five end-to-end scenarios SC01–SC05 through Signed & Archived, real state transitions, version/review/F01 audit, user role switching, file attachments, and scenario reset. See sections 11–15 of the spec for acceptance criteria.
+3) Respect the FINAL DECISION REGISTER (section 1), especially simplifications: free-text term/payment fields; named Reviewer and F01 approver selection; no Word editor/diff, LOA engine, SLA extension, external integrations, or real e-signature in the demo.
+4) Apply conservative routing. Required FIN/ACC/Legal/Procurement roles must never be bypassed outside documented A/C/D. Treat Legal-pending decisions as provisional; clearly label the mock.
+5) Use real interaction handlers, actual task/status updates and persistent store where feasible; keep one Contract Detail with Overview, History, Documents.
+6) Add demo actor switcher and scenario loader/reset. Provide README with seed personas, steps to run and limitations.
+7) Run build and tests, fix errors, report exactly which scenarios pass and what's simulated/unimplemented.
+
+Work in vertical slices: (i) state/models/screens, (ii) routing and review, (iii) version+F01, (iv) signing/archive, (v) scenarios/tests/polish. Do not stop after scaffolding; prioritize functioning full flows. Ask only if a critical ambiguous detail prevents progress; otherwise use documented conservative defaults.
